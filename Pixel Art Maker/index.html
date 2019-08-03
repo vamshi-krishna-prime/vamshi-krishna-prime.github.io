@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pixel Art Maker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS style link -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+
+  <body>
+
+    <!-- Header -->
+    <div class="header" >
+      <h1>ㅁㅁ Pixel Art Maker ㅁㅁ</h1>
+      <p>Project in 'Intro to the Programming Nanodegree, Udacity'.</p>
+    </div>
+
+    <!-- Navigation Bar for external links -->
+    <div class="navbar">
+      <a href="https://github.com/vamshi-krishna-prime" target="_blank">
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/vamshi-krishna-prime/"
+      target="_blank">
+        LinkedIn
+      </a>
+      <a href="https://www.facebook.com/vamshikrishna.prime.1/" target="_blank">
+        Facebook
+      </a>
+      <a href="https://www.vamshi-krishna-p.com/" target="_blank">
+        Portfolio
+      </a>
+    </div>
+
+    <!-- The flexible Sidebar contents -->
+    <div class="row">
+      <div class="side-bar">
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
+        <!-- Local image file -->
+        <img class="image" src="Vamshi_Krishna_Prime.png"
+        alt="Picture of Vamshi Krishna Prime">
+        <p>Vamshi Krishna Prime, Student of Udacity</p>
+        <h3>Canvas options:</h3>
+        <p>Change the canvas settings using below options</p>
+        <!-- Stack of buttons to interact with in JavaScript -->
+        <button type="button" id="click-effect" class="btn">
+          Mouse click
+        </button>
+        <button type="button" id="random-color" class="btn">
+          Random Color
+        </button>
+        <button type="button" id="erase" class="btn">
+          Erase Color
+        </button>
+        <button type="button" id="mouse-hover" class="btn">
+          Mouse hover
+        </button>
+        <button type="button" id="mouse-hover-random-color" class="btn">
+          Mouse random
+        </button>
+        <button type="button" id="reset" class="btn">
+          RESET Canvas
+        </button>
+      </div>
+
+      <!-- The main CANVAS contents -->
+      <div class="main">
+        <h1>Pixel Canvas</h1>
+        <h2>1. Choose Grid Size</h2>
+        <!-- Grid size picker-->
+        <form id="size-picker">
+            Grid Height:
+            <input type="number" id="input-height" name="height" min="0"
+            max="50" step="1" placeholder="0-50"  required>
+            Grid Width:
+            <input type="number" id="input-width" name="width" min="0"
+            max="50" step="1" placeholder="0-50"  required>
+            <input type="submit">
+        </form>
+        <h2>2. Pick a Color</h2>
+        <!-- color picker-->
+        <input type="color" id="color-picker">
+        <h3>3. select CANVAS options on left side</h3>
+        <!-- The CANVAS -->
+        <section id="canvas"></section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <h2>Languages: HTML, CSS, JavaScript</h2>
+    </div>
+
+    <!-- JavaScript link -->
+    <script src="designs.js"></script>
+  </body>
+</html>
