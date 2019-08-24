@@ -1,0 +1,288 @@
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  /* Header/logo Title */
+  .header {
+    padding: 10px;
+    text-align: center;
+    /* background: #1abc9c; */
+    background: #02b3e4;
+    color: white;
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    display: flex;
+    background-color: #333;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Change the 'navigation bar links' color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Make Column container flexible*/
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side-bar {
+    flex: 10%;
+    background: #11161a;
+    border-right: 1px solid rgba(219,226,232,1);
+    padding: 20px;
+    color: grey;
+    text-align-last: center;
+  }
+  
+  .side-bar h3, h2{
+    color: white;
+  }
+  
+  .insights{
+    flex: 10%;
+    background: #11161a;
+    border-right: 1px solid rgba(219,226,232,1);
+    padding: 20px;
+    color: grey;
+  }
+
+  .insights-left{
+    flex: 50%;
+    background: #32161a;
+    border-right: 1px solid rgba(219,226,232,1);
+    padding: 20px;
+    color: grey;
+  }
+
+  .insights-right{
+    flex: 50%;
+    background: #085baf;
+    border-right: 1px solid rgba(219,226,232,1);
+    padding: 20px;
+    color: grey;
+  }
+
+  /* Style the image */
+  .image{
+    padding: 0;
+    border: 0;
+    margin: 5px 10px 5px 10px;
+    width: 200px;
+    border-radius: 20%;
+  }
+
+  .screenshot{
+    padding: 0;
+    border: 0;
+    margin: 5px 10px 5px 10px;
+    width: 600px;
+    border-radius: 2%;
+  }
+
+  .screenshot:hover{
+      transform: scale(1.4);
+  }
+  
+  /* Style the buttons */
+  .btn{
+    font: .8125rem/1.5rem "Open Sans",sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    height: 3rem;
+    padding: 0 2rem;
+    background: #02b3e4;
+    color: #000;
+    border: transparent;
+    border-radius: .25rem;
+    cursor: pointer;
+    margin: 8px;
+    display: flex;
+    /* flex-direction: column; */
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+  }
+  
+  /* Style the buttons on hover */
+  .btn:hover {
+    color: #fff;
+    box-shadow: 0 0 8px 0 rgba(255,255,255,.16),
+    0 4px 8px 0 rgba(255,255,255,.08),
+    0 8px 16px 0 rgba(255,255,255,.08);
+  }
+  
+  /* Style the buttons on click */
+  .btn:focus {
+    color: #fff;
+    box-shadow: 0 0 8px 0 rgba(255,255,255,.16),
+    0 4px 8px 0 rgba(255,255,255,.08),
+    0 8px 16px 0 rgba(255,255,255,.08);
+  }
+
+  .infographic-image{
+    padding: 0;
+    border: 0;
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    border-radius: 2%;
+  }
+  
+  /* ---------------- */
+  
+  /* Main column */
+  .main {
+    flex: 70%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    /* font-family: Raleway, sans-serif; */
+    font-family: Roboto, sans-serif;
+  }
+  
+  .main h1{
+    text-align: center;
+    display: block;
+    font-size: 1.6em;
+    margin: 0.4em 0 0.4em 0;
+    font-weight: bold;
+    padding-top: 4px;
+  }
+  
+  .main h2{
+    display: block;
+    font-size: 1em;
+    color: black;
+    background-color: white;
+    margin: 0.8em 0 0.8em 0;
+    font-weight: bold;
+  }
+  
+  .main h3 {
+      font-weight: bold;
+    font-size: 1em;
+    margin: 0.4em 0 2.8em 0;
+  }
+
+
+  /* ---------------- */
+
+  .container { 
+    display: flex;
+    padding: .5em;
+    }
+  .image-box-left-align {
+    background: rgba(187, 8, 62, 0.993);
+    display: flex;
+    flex-direction: column;
+    padding: 35px 25px 35px 25px;
+    border-radius: 2% 0 0 2%;
+    border-right: 2px solid white;
+    justify-content: center;
+  }
+  .image-box-right-align {
+    background: rgb(7, 128, 226);
+    display: flex;
+    flex-direction: column;
+    padding: 35px 25px 25px 25px;
+    border-radius: 0 2% 2% 0;
+    border-left: 2px solid white;
+    justify-content: center;
+  }
+  .text-box-right-align {
+    /* background: steelblue; */
+    background: rgb(21, 30, 39);
+    padding: .5em;
+    border-radius:  0 2% 2% 0;
+  }
+  .text-box-left-align {
+    /* background: steelblue; */
+    background: rgb(21, 30, 39);
+    padding: .5em;
+    border-radius:  2% 0 0 2%;
+  }
+  .heading-box {
+    /* background: yellowgreen; */
+    color: rgb(167, 167, 167);
+    font-weight: bold;
+    /* font-family: Raleway, sans-serif; */
+    font-family: Roboto, sans-serif;
+  }
+  .data-box {
+    /* background: brown; */
+    color: white;
+  }
+
+  .data-box p{
+    text-align: justify;
+    font-size: 18px;
+    /* font-weight: lighter; */
+    font-weight: 100;
+    font-family: Raleway, sans-serif;
+    /* font-family: Roboto, sans-serif; */
+  }
+
+  .container div {
+    font-size: 2vw;
+    /* padding: .5em; */
+    
+    flex: 1;
+  }
+
+  .line{
+    align-content: center;
+    color: grey;
+  }
+
+  /* ---------------- */
+  
+  /* Footer */
+  .footer {
+    padding: 4px;
+    height: 4em;
+    text-align: center;
+    background-color: #191a1a;
+    color: grey;
+  }
+  
+  .footer h2{
+    font-size: 20px;
+    color: whitesmoke;
+  }
+
+  .footer div{
+    font-size: 20px;
+    color: purple;
+  }
+  
+  .footer img{
+    border: 0;
+    width: 88px;
+    height: 31px
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, it makes the
+  two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {
+      flex-direction: column;
+    }
+  }
+  
