@@ -1,2 +1,2 @@
 # vamshi-krishna-p-github.io
-A open source project
+Personal portfolio site
